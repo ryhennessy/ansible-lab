@@ -1,7 +1,7 @@
 - name: Install Datadog Agent on servers in AWS
   hosts: tag_http_yes
   become: yes
-  user: ec2-user 
+  user: centos 
   tasks:
     - name: Restart service httpd, in all cases
       service:
